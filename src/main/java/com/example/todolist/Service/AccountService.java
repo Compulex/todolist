@@ -38,7 +38,7 @@ public class AccountService {
      */
     public Account login(Account account){
         //find by username
-        return account;
+        return accountRepository.findByUsername(account.getUsername());
     }
 
     /**
